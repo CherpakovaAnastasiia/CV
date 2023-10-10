@@ -33,23 +33,37 @@
     <main>
       <section class="hero" id="particles-js">
         <div class="title">
-          <h1 class="name">Je suis Cherpakova Anastasiia</h1>
+          <h1 class="name" id="cherpakova">Je suis Cherpakova Anastasiia</h1>
           <h2 class="profession">Développeur Full Stack</h2>
           <h3 class="bienvenue">Bienvenue dans mon univers créatif</h3>
         </div>
+        <div class="img">
+          <img
+            src="/img/ca.jpg"
+            alt="Cherpakova Anastasiia"
+            class="photo"
+            width="250px"
+          />
+        </div>
         <div class="qualities">
-          <div>Mon expertise</div>
-          <div>Soft Skills</div>
-          <div class="img">
-            <img
-              src="/img/ca.jpg"
-              alt="Cherpakova Anastasiia"
-              class="photo"
-              width="200px"
-            />
-          </div>
-          <div>Diplômes et Formations</div>
-          <div>Expériences professionnelles</div>
+          <ul class="main-list">
+            <li class="main-item">
+              <button type="button" class="btn">Diplômes et Formations</button>
+            </li>
+            <li class="main-item">
+              <button type="button" class="btn" data-modal-open>
+                Mon expertise
+              </button>
+            </li>
+            <li class="main-item">
+              <button type="button" class="btn">Soft Skills</button>
+            </li>
+            <li class="main-item">
+              <button type="button" class="btn">
+                Expériences professionnelles
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -64,15 +78,57 @@
         <div>
           <ul class="footer-list">
             <li class="footer-item">
-              <a href="#" class="footer-icon">GitHub</a>
+              <a href="#" class="footer-icon"
+                ><img
+                  class="footer-img"
+                  src="/img/github.svg"
+                  width="35"
+                  height="35"
+                  alt="Icon GitHub"
+              /></a>
             </li>
             <li class="footer-item">
-              <a href="#" class="footer-icon">LinkedIn</a>
+              <a href="#" class="footer-icon"
+                ><img
+                  class="footer-img"
+                  src="/img/linkedin.svg"
+                  width="35"
+                  height="35"
+                  alt="Icon LinkedIn"
+              /></a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="/img/closeblack.svg"></use>
+          </svg>
+        </button>
+        <div>
+          <p class="modal-title"></p>
+          <div>
+            <p>
+              <span>Master d'art de l'argile</span> (2007-2008) Académie d'Etat
+              des arts décoratifs et appliqués et du design Kiev, Ukraine
+            </p>
+          </div>
+          <div></div>
+          <p>
+            <span> Artiste céramiste</span> (2001-2006) Université technique
+            nationale Poltava, Ukraine
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/mobile-menu.js"></script> -->
 
     <script src="/animated-bg/particles.min.js"></script>
     <script src="/animated-bg/app.js"></script>
