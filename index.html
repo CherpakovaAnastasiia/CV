@@ -15,7 +15,7 @@
           </a>
         </div>
         <div class="container nav">
-          <ul class="nav-list">
+          <ul class="nav-list list">
             <li class="nav-item">
               <a class="nav-link" href="#cherpakova">About me</a>
             </li>
@@ -23,7 +23,7 @@
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact" data-modal-open>Contact</a>
             </li>
           </ul>
         </div>
@@ -46,14 +46,15 @@
           />
         </div>
         <div class="qualities">
-          <ul class="main-list">
-            <li class="main-item">
+
+            <!-- Список с кнопками -->
+
+          <!-- <ul class="main-list"> -->
+            <!-- <li class="main-item">
               <button type="button" class="btn">Diplômes et Formations</button>
-            </li>
-            <li class="main-item">
-              <button type="button" class="btn" data-modal-open>
-                Mon expertise
-              </button>
+            </li> 
+          <li class="main-item">
+              <button type="button" class="btn">Mon expertise</button>
             </li>
             <li class="main-item">
               <button type="button" class="btn">Soft Skills</button>
@@ -63,7 +64,93 @@
                 Expériences professionnelles
               </button>
             </li>
-          </ul>
+          </ul>-->
+
+          <!-- Начало списка с табличками -->
+
+            <ul class="adv-list list">
+            <li class="adv-list-item">
+              <div class="adv-link-container">
+                <img
+                  src="/img/competence.png"
+                  alt="Mes diplômes"
+                  width="60"
+                  height="50"
+                  class="adv-img"
+                />
+                <p class="adv-cover-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="adv-img-text container">
+                <h2 class="adv-list-title">Diplômes et Formations</h2>
+              </div>
+            </li>
+            
+            <li class="adv-list-item">
+              <div class="adv-link-container">
+                <img
+                  src="/img/app-development.png"
+                  alt="Mon expertise"
+                  width="60"
+                  height="50"
+                  class="adv-img"
+                />
+                <p class="adv-cover-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="adv-img-text container">
+                <h2 class="adv-list-title">Mon expertise</h2>
+              </div>
+            </li>
+
+            <li class="adv-list-item">
+              <div class="adv-link-container">
+                <img
+                  src="/img/empathy.png"
+                  alt="Soft Skills"
+                  width="60"
+                  height="50"
+                  class="adv-img"
+                />
+                <p class="adv-cover-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="adv-img-text container">
+                <h2 class="adv-list-title">Soft Skills</h2>
+              </div>
+            </li>
+
+            <li class="adv-list-item">
+              <div class="adv-link-container">
+                <img
+                  src="/img/goal.png"
+                  alt="Expériences professionnelles"
+                  width="60"
+                  height="50"
+                  class="adv-img"
+                />
+                <p class="adv-cover-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="adv-img-text container">
+                <h2 class="adv-list-title">Expériences professionnelles</h2>
+              </div>
+            </li>
+
+<!-- Конец списка с табличками -->
+
         </div>
       </section>
     </main>
@@ -104,7 +191,7 @@
 
     <!-- МОДАЛЬНОЕ ОКНО -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -112,24 +199,19 @@
           </svg>
         </button>
         <div>
-          <p class="modal-title"></p>
           <div>
-            <p>
-              <span>Master d'art de l'argile</span> (2007-2008) Académie d'Etat
-              des arts décoratifs et appliqués et du design Kiev, Ukraine
-            </p>
+            <h2 class="modal-title">Contact</h2>
+            <h3>Email:</h3>
+            <p>cherpakova.anastasiia@gmail.com</p>
           </div>
-          <div></div>
-          <p>
-            <span> Artiste céramiste</span> (2001-2006) Université technique
-            nationale Poltava, Ukraine
-          </p>
+          <div>
+            <h3>Phone:</h3>
+            <p>+33000000000</p>
+          </div>
         </div>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
-
+    <script src="/js/modal.js"></script> -->
     <script src="/animated-bg/particles.min.js"></script>
     <script src="/animated-bg/app.js"></script>
     <script>
@@ -138,5 +220,6 @@
       //     console.log("callback - particles.js config loaded");
       //   });
     </script>
+    <!-- <script src="/js/modal.js"></script> -->
   </body>
 </html>
