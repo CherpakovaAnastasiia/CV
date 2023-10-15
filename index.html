@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Cherpakova Anastasiia CV</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -20,7 +20,7 @@
               <a class="nav-link" href="#cherpakova">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact" data-modal-open>Contact</a>
@@ -142,7 +142,7 @@
               </div>
             </li>
 
-<!-- Конец списка с табличками -->
+<!------------ Конец списка с табличками ----------->
 
         </div>
       </section>
@@ -158,7 +158,7 @@
         <div>
           <ul class="footer-list">
             <li class="footer-item">
-              <a href="https://github.com/CherpakovaAnastasiia" class="footer-icon"
+              <a href="https://github.com/CherpakovaAnastasiia" class="footer-icon" target="_blank"
                 ><img
                   class="footer-img"
                   src="/img/github.svg"
@@ -168,7 +168,7 @@
               /></a>
             </li>
             <li class="footer-item">
-              <a href="https://www.linkedin.com/in/cherpakova-anastasiia-69a869270/" class="footer-icon"
+              <a href="https://www.linkedin.com/in/cherpakova-anastasiia-69a869270/" class="footer-icon" target="_blank"
                 ><img
                   class="footer-img"
                   src="/img/linkedin.svg"
@@ -182,29 +182,40 @@
       </div>
     </footer>
 
-    <!-- МОДАЛЬНОЕ ОКНО -->
+    <!---------- МОДАЛЬНОЕ ОКНО ---------->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="modal-icon" width="8" height="8">
+    <input type="checkbox" id="modal-checkbox" class="modal-checkbox">
+<div class="backdrop" data-modal>
+    <div class="modal" id="contact-modal">
+  <div class="modal-content">
+
+    <!-- <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-icon" width="10" height="10">
             <use href="/img/closeblack.svg"></use>
           </svg>
-        </button>
-        <div>
-          <div>
-            <h2 class="modal-title">Contact</h2>
-            <h3>Email:</h3>
-            <p>cherpakova.anastasiia@gmail.com</p>
-          </div>
-          <div>
-            <h3>Phone:</h3>
-            <p>+33000000000</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="/js/modal.js"></script> -->
+        </button> -->
+
+        <label for="modal-checkbox" class="modal-close" data-modal-close>
+        <svg class="modal-icon" width="10" height="10">
+          <use href="/img/closeblack.svg"></use>
+        </svg>
+    </label>
+    <form action="send_email.php" method="post">
+      <label for="name">Prenom:</label>
+      <input type="text" class="input-class"  id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" class="input-class"  id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea class="text-area" id="message" name="message" placeholder="Message" required></textarea>
+
+      <button type="submit" class="modal-btn">Envoyer</button>
+    </form>
+  </div>
+</div>
+</div>
+
     <script src="/animated-bg/particles.min.js"></script>
     <script src="/animated-bg/app.js"></script>
     <script>
@@ -213,6 +224,7 @@
       //     console.log("callback - particles.js config loaded");
       //   });
     </script>
-    <!-- <script src="/js/modal.js"></script> -->
+    <script src="/js/modal.js"></script> 
+    
   </body>
 </html>

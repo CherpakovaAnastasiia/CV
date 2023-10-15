@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cherpakova Anastasiia Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <div class="container logo">
+          <a href="#cherpakova" class="logo-name">
+            <span class="accent">CHERPAKOVA</span> Anastasiia
+          </a>
+        </div>
+        <div class="container nav">
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-modal-open>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="projets-list" id="particles-js">
+        <div class="port-text">
+          <h1 class="port-title">Mes projets</h1>
+        </div>
+
+        <!-- Фотографии для портфолио -->
+
+        <div class="port-img-container">
+          <ul class="port-list list">
+            <li class="port-item">
+              <img src="/img/at-work.jpg" alt="Projet 1" class="port-img" />
+              <h2 class="port-img-title">Projet №1</h2>
+              <p class="port-img-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </li>
+            <li class="port-item">
+              <img src="/img/work.jpg" alt="Projet 2" class="port-img" />
+              <h2 class="port-img-title">Projet №2</h2>
+              <p class="port-img-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </li>
+            <li class="port-item">
+              <img src="/img/at-work.jpg" alt="Projet 3" class="port-img" />
+              <h2 class="port-img-title">Projet №3</h2>
+              <p class="port-img-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </li>
+            <li class="port-item">
+              <img src="/img/work.jpg" alt="Projet 4" class="port-img" />
+              <h2 class="port-img-title">Projet №4</h2>
+              <p class="port-img-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logo">
+          <a href="#cherpakova" class="logo-name">
+            <span class="accent">CHERPAKOVA</span> Anastasiia
+          </a>
+        </div>
+        <div>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a
+                href="https://github.com/CherpakovaAnastasiia"
+                class="footer-icon"
+                target="_blank"
+                ><img
+                  class="footer-img"
+                  src="/img/github.svg"
+                  width="35"
+                  height="35"
+                  alt="Icon GitHub"
+              /></a>
+            </li>
+            <li class="footer-item">
+              <a
+                href="https://www.linkedin.com/in/cherpakova-anastasiia-69a869270/"
+                class="footer-icon"
+                target="_blank"
+                ><img
+                  class="footer-img"
+                  src="/img/linkedin.svg"
+                  width="35"
+                  height="35"
+                  alt="Icon LinkedIn"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <input type="checkbox" id="modal-checkbox" class="modal-checkbox" />
+    <div class="backdrop" data-modal>
+      <div class="modal" id="contact-modal">
+        <div class="modal-content">
+          <!-- <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-icon" width="10" height="10">
+            <use href="/img/closeblack.svg"></use>
+          </svg>
+        </button> -->
+
+          <label for="modal-checkbox" class="modal-close" data-modal-close>
+            <svg class="modal-icon" width="10" height="10">
+              <use href="/img/closeblack.svg"></use>
+            </svg>
+          </label>
+          <form action="send_email.php" method="post">
+            <label for="name">Prenom:</label>
+            <input
+              type="text"
+              class="input-class"
+              id="name"
+              name="name"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              class="input-class"
+              id="email"
+              name="email"
+              required
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              class="text-area"
+              id="message"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="modal-btn">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/animated-bg/particles.min.js"></script>
+    <script src="/animated-bg/app.js"></script>
+    <script src="/js/modal.js"></script>
+  </body>
+</html>
